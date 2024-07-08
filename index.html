@@ -2,33 +2,39 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INCRIPTACION</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ENCRIPTACION</title>
+    <LInk rel="stylesheet" href="style.css"></LInk>
 </head>
 <body>
-    <div class="contenedor"> 
+    <div class="content">
         <div class="encriptar">
-            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="ingresa el texto aqui"></textarea>
-        
+            <textarea 
+                name="texto"  
+                class="texto"
+                id="texto" 
+                cols="30" 
+                rows="10" 
+                placeholder="ingresa el texto aqui">
+            </textarea>
+        </div>
         <div class="terminos">
             <p>solo letras minusculas y sin acentos</p>
         </div>
         <div class="botones">
-            <button class="btn_encriptar" type="button" onclick="encriptar()"></button>
-            <input type="button" class="btn_desencriptar" value="desencriptar" onclick="desencriptar()"/>
+            <button class="btn-encriptar" type="button" onclick="encriptar()"> encriptar</button>
+            <input type="button" class="btn-desencriptar" value="desecriptar" onclick="desencriptar()">
         </div>
-    </div>
-        <div class="encriptado">
+        <div class="encriptar">
             <img src="" alt="" id="logo">
-            <div class="mensaje_encriptado" id="mensaje_encriptado">
-                <h2 id="titulo_mensaje">ningun mensaje encontrado</h2>
-                <p id="parrafo">ingresa el texto que deseas encriptar o desencriptar</p>
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje"> ningun mensaje encontrado</h2>
+                <p id="parrafo">ingresa al texto que deseas encriptar o desecriptar</p>
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
             </div>
         </div>
-        </div>
-
+    </div>
 </body>
-        <script src="index.js"></script>
+<script src="index.js"></script>
 </html>
