@@ -7,38 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contenedor">
+    <div class="contenedor"> 
         <div class="encriptar">
-            <textarea 
-            name="texto" 
-            class="texto" 
-            id="texto" 
-            cols="30" 
-            placeholder="Ingresa el texto aqui">
-            </textarea>
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="ingresa el texto aqui"></textarea>
         
         <div class="terminos">
-            <p>solo letras minusculas y sin acentos.</p>
+            <p>solo letras minusculas y sin acentos</p>
         </div>
         <div class="botones">
-            <button class="boton_incriptar" type="button" onclick="encriptar()">
-                Emcriptar
-            </button>
-            <input type="button" class="boton_desincriptar" value="Desencriptar" onclick="desencriptar()"
-            />
-
+            <button class="btn_encriptar" type="button" onclick="encriptar()"></button>
+            <input type="button" class="btn_desencriptar" value="desencriptar" onclick="desencriptar()"/>
         </div>
     </div>
-    <div class="encriptado">
-        <img src="" alt="" id="logo">
-        <div class="mensaje_incriptado" id="mensaje_incriptado">
-            <h2 id="titulo_mensaje"> Ningun mensaje encontrado</h2>
-            <p id="parrafo">ingresa al texto que deseas encriptar o desencriptar</p>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+        <div class="encriptado">
+            <img src="" alt="" id="logo">
+            <div class="mensaje_encriptado" id="mensaje_encriptado">
+                <h2 id="titulo_mensaje">ningun mensaje encontrado</h2>
+                <p id="parrafo">ingresa el texto que deseas encriptar o desencriptar</p>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+            </div>
+        </div>
+        </div>
 
-        </div>
-        </div>
-        </div>
 </body>
         <script src="index.js"></script>
 </html>
